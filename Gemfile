@@ -5,6 +5,7 @@ ruby "3.1.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.2"
+gem "bootstrap-sass"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -44,7 +45,6 @@ gem "bootsnap", require: false
 
 # Use Sass to process CSS
 gem "sassc-rails"
-
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -67,6 +67,7 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  gem 'rails-controller-testing'
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
